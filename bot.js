@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const fs = require('fs');
-const request = require("request");
 const moment = require('moment');
 require('./util/eventLoader')(client);
 
@@ -251,27 +250,6 @@ if(message.content.toLowerCase() === "slm") {
 	})
 }
 })
-
-client.on("message", message => {
-  if(!message.guild) return;
-  if(message.author.bot) return;
-  request.get("https://pinkie-api.glitch.me/api/kufur", (err, res, body) => { //Barış Demirci tarafından hazırlanmıştır xd
-    const json = JSON.parse(body);
-    const contains = json.filter(word => {
-      const wordExp = new RegExp("(\\b)+(" + word + ")+(\\b)", "gui");
-      return (wordExp.test(message.content));
-    }).length > 0 || false;
-    if(contains) {
-      message.delete();
-      request.get("https://pinkie-api.glitch.me/api/kufurCevap", (err, res, body) => { //API Barış Demirciye aittir
-        const cevaplar = JSON.parse(body);
-        var rand = cevaplar[Math.floor(Math.random() * cevaplar.length)];
-        var cevap = rand.replace("%member%", message.author);
-        message.channel.send(cevap);
-      });
-    }
-  });
-});
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 
