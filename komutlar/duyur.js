@@ -33,7 +33,7 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ['duyurla'],
-  permLevel: 1
+  permLevel: 3
 };
 
 exports.help = {
