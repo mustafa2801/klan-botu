@@ -278,6 +278,15 @@ if(message.content.toLowerCase() === "h.b") {
 }
 })
 
+client.on("message", message => {
+
+if(message.content.toLowerCase() === "h.b.") {
+	message.delete()
+	message.reply(":x: Kullanılması yasaklanan bir kelime kullandın, lütfen daha dikkatli ol!").then(message => {
+	})
+}
+})
+
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 
 client.on('warn', e => {
