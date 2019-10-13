@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (bot, message, args) => {
     let mesaj = args.slice(0).join(' ');
-    if (mesaj.length < 1) return message.reply('Ne çekilişi olacak onu da yazman lazım.');
+    if (mesaj.length < 1) return message.reply('Bu çekilişin bir adı yok mu ? :blush:');
     const embed = new Discord.RichEmbed()
         .setColor("#36393F")
         .addField('Ödül', `${mesaj}`)
