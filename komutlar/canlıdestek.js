@@ -5,7 +5,7 @@ exports.run = async (client, message, params) => {
     const asdf = await client.channels.get(message.channel.id).createInvite()
   message.delete();
   const embed = new Discord.RichEmbed()
-  .setTitle("» BK BOT | Canlı Destek")
+  .setTitle("» NonStop`E-Spor | Canlı Destek")
   .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle!**")
   .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin https://discord.gg/h34Wm3d")
  message.channel.send(embed)
