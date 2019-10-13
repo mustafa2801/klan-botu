@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Mustafa DEDECAN  **NonStop`E-Spor**\n\n_**Linkler:**_\n\n**NonStop`E-Spor** sunucusunun davet linki: https://discord.gg/h34Wm3d \n\n**:copyright: 2019 [Dedecan]**');
+    .setDescription('Yapımcı: Mustafa DEDECAN  **NonStop`E-Spor**\n\n_**Linkler:**_\n\n**NonStop`E-Spor** sunucusunun davet linki: https://discord.gg/h34Wm3d \n\n**:copyright: 2019 [Dedecan]**');
     return message.author.sendEmbed(pingozel)
 };
 
