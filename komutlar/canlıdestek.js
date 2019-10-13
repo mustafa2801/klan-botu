@@ -7,13 +7,12 @@ exports.run = async (client, message, params) => {
   const embed = new Discord.RichEmbed()
   .setTitle("» NonStop`E-Spor | Canlı Destek")
   .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle!**")
-  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin **Dedecan#0409**")
+  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin Dedecan#0409")
  message.channel.send(embed)
       const invite = new Discord.RichEmbed()
   .setAuthor("» Canlı Destek | Talep")
   .addField('**» Kullanıcı Adı: **', message.author.username + '#' + message.author.discriminator)
   .addField('**» Sunucu Adı: **', message.guild.name)
-  .setDescription(asdf.url)
       channel.send(632859534083227668)
 };
  
