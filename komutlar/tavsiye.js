@@ -6,6 +6,7 @@ exports.run = function(client, message, args) {
     if (type.length < 1) return message.channel.send(
 new Discord.RichEmbed()
 .setDescription('Kullanım: !tavsiye <Tavsiyeniz>'));
+    message.delete();
 const embed = new Discord.RichEmbed()
 .setColor('RANDOM')
 .setDescription('Tavsiyeniz Bildirildi!')
