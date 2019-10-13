@@ -5,8 +5,8 @@ exports.run = (bot, message, args) => {
     if (mesaj.length < 1) return message.reply('Bu çekilişin bir adı yok mu ? :blush:');
     const embed = new Discord.RichEmbed()
         .setColor("#36393F")
-        .addField('Ödül', `${mesaj}`)
-        .addField('Kazanan:', `${message.guild.members.random().displayName}`)
+        .addField('Ödülün Adı', `${mesaj}`)
+        .addField('Kazanan Talihli:', `${message.guild.members.random().displayName}`)
     return message.channel.send(embed);
 }
 
