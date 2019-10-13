@@ -9,8 +9,6 @@ module.exports.run = async (bot, message, args) => {
     .setColor(3447003)
     .setDescription(`${mesaj} \n\n\ Evet İçin: :thumbsup: Hayır İçin: :thumbsdown: `)
     return message.channel.sendEmbed(embed);
-    message.react("✋")
-    message.react("👎")
 };
 
 exports.conf = {
