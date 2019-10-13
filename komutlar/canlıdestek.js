@@ -7,7 +7,7 @@ exports.run = async (client, message, params) => {
   const embed = new Discord.RichEmbed()
   .setTitle("» NonStop`E-Spor | Canlı Destek")
   .setDescription("**Canlı Desteği kullandğın için teşekkür ederiz, Seninle ekibim ilgilenicektir lütfen bekle!**")
-  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin https://discord.gg/h34Wm3d")
+  .setFooter("30 Saniye içinde geri dönülmezse lütfen iletişime geçin **Dedecan#0409**")
  message.channel.send(embed)
       const invite = new Discord.RichEmbed()
   .setAuthor("» Canlı Destek | Talep")
