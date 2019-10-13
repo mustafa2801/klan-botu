@@ -21,7 +21,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['sunucudavet', 'invite'],
-  permLevel: 4
+  permLevel: 0
 };
 
 exports.help = {
