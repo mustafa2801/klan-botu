@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
 	
-    message.channel.send(`Komut Başarılı! :white_check_mark: \nBot 3 saniye içerisinde otomatik olarak yeniden başlatılacak.`).then(msg => {
+    message.channel.send(`Komut Başarılı! :white_check_mark: \nBot 20-30 saniye içerisinde otomatik olarak yeniden başlatılacak.`).then(msg => {
     console.log(`BOT: Bot yeniden başlatılıyor...`);
     process.exit(0);
   })
