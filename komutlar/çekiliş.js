@@ -7,6 +7,7 @@ exports.run = (bot, message, args) => {
         .setColor("#36393F")
         .addField('Ödülün Adı', `${mesaj}`)
         .addField('Kazanan Talihli:', `${message.guild.members.random().displayName}`)
+    message.channel.send("Tebrikler :blush:");
     return message.channel.send(embed);
 }
 
