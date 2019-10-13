@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor('OYLAMA')
     .setColor(3447003)
     .setDescription(`${mesaj} \n\n\ Evet İçin: :thumbsup: Hayır İçin: :thumbsdown: `)
-    message.react("👍")
+    message.react("✋")
     message.react("👎")
     return message.channel.sendEmbed(embed);
 };
